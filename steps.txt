@@ -1,0 +1,16 @@
+uv venv
+
+.scripts/scripts/activate
+
+uv pip install redis
+
+docker desktop --->on
+
+docker run -d -p 6379:6379 --name redis redis
+
+docker exec -it redis redis-cli=> checking running or not
+
+
+docker ps=>check 
+
+
